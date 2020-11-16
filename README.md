@@ -19,4 +19,26 @@
   
   Init
   
-  ## 4.
+  ## 9. /proc/
+  
+  https://linux-faq.ru/page/specializirovannaya-fajlovaya-sistema-proc
+  
+  /proc/$$/environ
+  файл, environ, содержащий информацию о переменных окружения процесса
+  
+  ##10. /proc/
+  
+  - http://ashep.org/2011/nemnogo-ob-ispolzovanii-proc/#.X7LbAOVxfIU
+  
+  - /proc/<PID>/cmdline
+  - В этом файле хранится командная строка, которой был запущен данный процесс;
+  
+  - /proc/<PID>/exe
+  - представляет собой символическую ссылку на исполняемый файл, который инициировал запуск процесса;
+  
+  ## 11. cat /proc/cpuinfo | egrep "sse"
+  
+  https://habr.com/ru/post/109394/
+  
+  SSE 4.2
+  https://dic.academic.ru/dic.nsf/ruwiki/746754
