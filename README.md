@@ -26,7 +26,7 @@
   /proc/$$/environ
   файл, environ, содержащий информацию о переменных окружения процесса
   
-  ##10. /proc/
+  ## 10. /proc/
   
   - http://ashep.org/2011/nemnogo-ob-ispolzovanii-proc/#.X7LbAOVxfIU
   
