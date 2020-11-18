@@ -19,6 +19,25 @@
   
   Init
   
+  ## 4. Перенаправление
+  
+  Статья с перенаправлением https://www.opennet.ru/docs/RUS/bash_scripting_guide/c11620.html
+  
+  ls stderr > dev/pts/1 
+  
+  ## 5.
+  
+  echo 1234567890 0> File_In | File_In 1> File_Out 
+  
+  ## 6.
+  
+  
+  ## 7.
+  
+  
+  ## 8.
+  
+  
   ## 9. /proc/
   
   https://linux-faq.ru/page/specializirovannaya-fajlovaya-sistema-proc
