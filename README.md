@@ -23,20 +23,24 @@
   
   Статья с перенаправлением https://www.opennet.ru/docs/RUS/bash_scripting_guide/c11620.html
   
-  ls stderr > dev/pts/1 
+  ls 2> dev/pts/1 
   
   ## 5.
   
-  echo 1234567890 0> File_In | File_In 1> File_Out 
-  
+  echo 456 > file546 | cat file456 > file654
+    
   ## 6.
   
+  по ssh работать не будет
   
-  ## 7.
+  ## 7. bash 5>&1 echo netology > /proc/$$/fd/5
   
+  Данными действиями мы перенаправляем все что в 5м дескрипторе bash в stdout, далее вывод команды echo перенаправляем в 5 дескриптор. результат netology на экране 
   
   ## 8.
   
+  bash 50>&2 
+  echo netology | /proc/$$/fd/50
   
   ## 9. /proc/
   
@@ -61,3 +65,19 @@
   
   SSE 4.2
   https://dic.academic.ru/dic.nsf/ruwiki/746754
+
+  ## 12.
+  
+  Так как по умолчанию удаленный пользователь не является аутентифицированным, ssh сервер не запустит сразу shell (так как в этом случае любой мог бы получить доступ), а сначала вызовет login. ПОэтому и отображения на tty не будет.
+  
+  ## 13. reptyr
+  
+  https://codeby.net/threads/reptyr-vostanovlenie-utrachennoj-pty-ssh-sessii.72087/
+  reptyr# ps -a
+  reptyr# reptyr -T 28396
+  
+  ## 14. tee
+  
+  https://losst.ru/komanda-tee-linux
+  https://zalinux.ru/?p=2333
+  Служит для записи в один или несколько файлов. не работает перенапраление там, де нужны повышенные привилегии
